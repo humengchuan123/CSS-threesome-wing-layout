@@ -1,0 +1,6 @@
+html代码中，middle部分首先要放在container的最前部分，然后是left，right
+
+将三者都设置 float:left
+middle设置 width:100% 占满一行
+此时middle占满一行，所以要把left拉到middle所在行的最左边，使用 margin-left:-100%，同理right使用 margin-left:-200px
+此时middle的内容被覆盖，要把middle的内容拉出来，除了使用外围container的padding，还可以考虑使用margin，给middle增加一个内层div -- middle_content, 然后设置 margin

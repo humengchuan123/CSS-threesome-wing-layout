@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>双飞翼布局</title>
+<style type="text/css">
+
+        body {
+            text-align: center;;
+        }
+        #header, #footer {
+            height: 50px;
+            background-color: #aaa;
+			line-height:50px;
+        }
+        #container {
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        #left {
+            background-color: red;
+            float:left;
+            width:200px;
+			height:120px;
+            margin-left: -100%;
+			
+        }
+        #right {
+            background-color: green;
+            width: 200px;
+			height:120px;
+            float: left;
+            margin-left: -200px;
+        }
+        #middle {
+            float: left;
+            width: 100%;
+			
+        }
+        #middle_content {
+            background-color: blue;
+            margin: 0 210px;
+			height:120px;
+        }
+    
+</style>
+</head>
+
+<body>
+ <div id="demo">
+        <header id="header">头部</header>
+        <div id="container">
+            <div id="middle">
+             <div id="middle_content">
+             <div style="width:80%;height:80px; background:#fff; margin:5px;">
+    <div style="width:20px;height:20px;background:#ccc; float:left; margin:8px;"></div>
+    <div style="width:20px;height:20px;background:#ccc; float:left; margin:8px;"></div>
+    <div style="width:20px;height:20px;background:#ccc; float:left; margin:8px;"></div>
+</div>
+                 middle_content<br>主内容区域
+                    </div>
+                </div>
+            <div id="left">
+                left<br>左侧边栏区域
+            </div>
+            <div id="right">
+                right<br>右侧边栏区域
+            </div>
+        </div>
+        <footer id="footer">底部</footer>
+    </div>
+</body>
+</html>
